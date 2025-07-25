@@ -1,0 +1,150 @@
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-background"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text fade-in">
+        <h1 class="hero-title">
+          Hi, I'm <span class="text-primary">Your Name</span>
+        </h1>
+        <h2 class="hero-subtitle">Full Stack Developer & Problem Solver</h2>
+        <p class="hero-description">
+          Passionate about creating innovative web solutions and bringing ideas to life through code. 
+          Specializing in modern web technologies and user-centered design.
+        </p>
+        <div class="hero-buttons">
+          <a routerLink="/projects" class="btn btn-primary">
+            <i class="fas fa-briefcase"></i>
+            View My Work
+          </a>
+          <a routerLink="/resume" class="btn btn-outline">
+            <i class="fas fa-download"></i>
+            Download CV
+          </a>
+        </div>
+      </div>
+      <div class="hero-image fade-in">
+        <div class="image-placeholder">
+          <i class="fas fa-user-circle"></i>
+          <p>Add your professional photo here</p>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" (click)="scrollToSection('about')">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section section-padding">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">Get to know more about my background and passion</p>
+    </div>
+    <div class="about-content">
+      <div class="about-text fade-in-up">
+        <h3>Hello! I'm a passionate developer</h3>
+        <p>
+          With over 3 years of experience in web development, I specialize in creating 
+          robust, scalable applications using modern technologies. I'm passionate about 
+          clean code, user experience, and continuous learning.
+        </p>
+        <p>
+          My journey in technology started with curiosity and has evolved into a career 
+          where I get to solve complex problems and build solutions that make a difference. 
+          I believe in the power of technology to transform businesses and improve lives.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <i class="fas fa-code"></i>
+            <div>
+              <h4>Clean Code</h4>
+              <p>Writing maintainable and scalable code</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-lightbulb"></i>
+            <div>
+              <h4>Innovation</h4>
+              <p>Always exploring new technologies and approaches</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-users"></i>
+            <div>
+              <h4>Collaboration</h4>
+              <p>Working effectively in team environments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills-section section-padding bg-light">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <p class="section-subtitle">Technologies and tools I work with</p>
+    </div>
+    <div class="skills-grid">
+      <div *ngFor="let skill of skills; let i = index" class="skill-item fade-in-up">
+        <div class="skill-header">
+          <div class="skill-icon">
+            <i [class]="skill.icon"></i>
+          </div>
+          <div class="skill-info">
+            <h4>{{ skill.name }}</h4>
+            <span class="skill-percentage">{{ skill.level }}%</span>
+          </div>
+        </div>
+        <div class="skill-progress">
+          <div class="progress-fill" [style.width.%]="0"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Achievements Section -->
+<section class="achievements-section section-padding">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Achievements</h2>
+      <p class="section-subtitle">Numbers that speak for themselves</p>
+    </div>
+    <div class="achievements-grid">
+      <div *ngFor="let achievement of achievements" class="achievement-item fade-in-up">
+        <div class="achievement-icon">
+          <i [class]="achievement.icon"></i>
+        </div>
+        <div class="achievement-number">{{ achievement.number }}</div>
+        <div class="achievement-label">{{ achievement.label }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section section-padding bg-light">
+  <div class="container">
+    <div class="cta-content text-center">
+      <h2>Ready to Work Together?</h2>
+      <p>Let's discuss your project and see how I can help bring your ideas to life.</p>
+      <div class="cta-buttons">
+        <a routerLink="/projects" class="btn btn-primary">
+          <i class="fas fa-eye"></i>
+          View My Projects
+        </a>
+        <a href="mailto:your.email@example.com" class="btn btn-outline">
+          <i class="fas fa-envelope"></i>
+          Get In Touch
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

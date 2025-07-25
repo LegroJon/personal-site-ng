@@ -1,0 +1,145 @@
+<!-- Header Section -->
+<section class="resume-header section-padding">
+  <div class="container">
+    <div class="header-content">
+      <div class="header-text">
+        <h1 class="page-title">Resume</h1>
+        <p class="page-subtitle">Professional Experience & Qualifications</p>
+        <button (click)="downloadResume()" class="btn btn-primary">
+          <i class="fas fa-download"></i>
+          Download PDF Resume
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section class="experience-section section-padding bg-light">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Professional Experience</h2>
+      <p class="section-subtitle">My journey in the tech industry</p>
+    </div>
+    
+    <div class="timeline">
+      <div *ngFor="let exp of experiences; let i = index" class="timeline-item fade-in-up">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="experience-header">
+            <h3 class="job-title">{{ exp.title }}</h3>
+            <div class="job-details">
+              <span class="company">{{ exp.company }}</span>
+              <span class="period">{{ exp.period }}</span>
+            </div>
+          </div>
+          <p class="job-description">{{ exp.description }}</p>
+          <div class="achievements">
+            <h4>Key Achievements:</h4>
+            <ul>
+              <li *ngFor="let achievement of exp.achievements">{{ achievement }}</li>
+            </ul>
+          </div>
+          <div class="technologies">
+            <span *ngFor="let tech of exp.technologies" class="tech-tag">{{ tech }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section class="education-section section-padding">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Education</h2>
+      <p class="section-subtitle">Academic background and qualifications</p>
+    </div>
+    
+    <div class="education-grid">
+      <div *ngFor="let edu of education" class="education-item card fade-in-up">
+        <div class="card-body">
+          <div class="education-header">
+            <h3 class="degree">{{ edu.degree }}</h3>
+            <div class="school-info">
+              <span class="school">{{ edu.school }}</span>
+              <span class="period">{{ edu.period }}</span>
+            </div>
+          </div>
+          <p class="description">{{ edu.description }}</p>
+          <div class="achievements">
+            <h4>Highlights:</h4>
+            <ul>
+              <li *ngFor="let achievement of edu.achievements">{{ achievement }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills-section section-padding bg-light">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-subtitle">Technologies and tools I'm proficient in</p>
+    </div>
+    
+    <div class="skills-grid">
+      <div *ngFor="let skillGroup of skills" class="skill-group card fade-in-up">
+        <div class="card-body">
+          <h3 class="skill-category">{{ skillGroup.category }}</h3>
+          <div class="skill-items">
+            <span *ngFor="let skill of skillGroup.items" class="skill-tag">{{ skill }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications Section -->
+<section class="certifications-section section-padding">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Certifications</h2>
+      <p class="section-subtitle">Professional certifications and achievements</p>
+    </div>
+    
+    <div class="certifications-grid">
+      <div *ngFor="let cert of certifications" class="certification-item card fade-in-up">
+        <div class="card-body">
+          <div class="cert-icon">
+            <i [class]="cert.icon"></i>
+          </div>
+          <h3 class="cert-name">{{ cert.name }}</h3>
+          <p class="cert-issuer">{{ cert.issuer }}</p>
+          <span class="cert-date">{{ cert.date }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact CTA -->
+<section class="contact-cta section-padding bg-light">
+  <div class="container">
+    <div class="cta-content text-center">
+      <h2>Interested in Working Together?</h2>
+      <p>Let's discuss how my skills and experience can benefit your team.</p>
+      <div class="cta-buttons">
+        <a href="mailto:your.email@example.com" class="btn btn-primary">
+          <i class="fas fa-envelope"></i>
+          Contact Me
+        </a>
+        <a routerLink="/projects" class="btn btn-outline">
+          <i class="fas fa-briefcase"></i>
+          View Projects
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

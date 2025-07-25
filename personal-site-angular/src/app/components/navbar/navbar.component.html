@@ -1,0 +1,47 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-brand">
+      <a routerLink="/home" class="brand-link">
+        <h3>Your Name</h3>
+      </a>
+    </div>
+    
+    <div class="navbar-menu" [class.active]="isMenuOpen">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a routerLink="/home" 
+             routerLinkActive="active" 
+             class="nav-link"
+             (click)="closeMenu()">
+            <i class="fas fa-home"></i>
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/resume" 
+             routerLinkActive="active" 
+             class="nav-link"
+             (click)="closeMenu()">
+            <i class="fas fa-file-alt"></i>
+            Resume
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/projects" 
+             routerLinkActive="active" 
+             class="nav-link"
+             (click)="closeMenu()">
+            <i class="fas fa-briefcase"></i>
+            Projects
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="navbar-toggle" (click)="toggleMenu()">
+      <span class="bar" [class.active]="isMenuOpen"></span>
+      <span class="bar" [class.active]="isMenuOpen"></span>
+      <span class="bar" [class.active]="isMenuOpen"></span>
+    </div>
+  </div>
+</nav>

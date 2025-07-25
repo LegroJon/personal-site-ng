@@ -1,0 +1,126 @@
+<!-- Header Section -->
+<section class="projects-header section-padding">
+  <div class="container">
+    <div class="header-content text-center">
+      <h1 class="page-title">Projects</h1>
+      <p class="page-subtitle">A showcase of my recent work and creative solutions</p>
+    </div>
+  </div>
+</section>
+
+<!-- Filter Section -->
+<section class="filter-section">
+  <div class="container">
+    <div class="filter-buttons">
+      <button 
+        *ngFor="let category of categories"
+        [class]="'filter-btn ' + (selectedCategory === category ? 'active' : '')"
+        (click)="filterProjects(category)">
+        {{ category }}
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Grid -->
+<section class="projects-section section-padding">
+  <div class="container">
+    <div class="projects-grid">
+      <div *ngFor="let project of filteredProjects" class="project-card fade-in-up">
+        <div class="project-image">
+          <img [src]="project.image" [alt]="project.title" loading="lazy">
+          <div class="project-overlay">
+            <div class="project-actions">
+              <button 
+                *ngIf="project.liveUrl" 
+                (click)="openLink(project.liveUrl)"
+                class="action-btn"
+                title="View Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+              <button 
+                (click)="openLink(project.githubUrl)"
+                class="action-btn"
+                title="View Source Code">
+                <i class="fab fa-github"></i>
+              </button>
+            </div>
+          </div>
+          <div class="project-status" [class]="project.status.toLowerCase().replace(' ', '-')">
+            {{ project.status }}
+          </div>
+        </div>
+        
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <span class="project-category">{{ project.category }}</span>
+          </div>
+          
+          <p class="project-description">{{ project.description }}</p>
+          
+          <div class="project-features">
+            <h4>Key Features:</h4>
+            <ul>
+              <li *ngFor="let feature of project.features.slice(0, 3)">{{ feature }}</li>
+              <li *ngIf="project.features.length > 3" class="more-features">
+                +{{ project.features.length - 3 }} more features
+              </li>
+            </ul>
+          </div>
+          
+          <div class="project-technologies">
+            <span *ngFor="let tech of project.technologies" class="tech-tag">{{ tech }}</span>
+          </div>
+          
+          <div class="project-links">
+            <a 
+              *ngIf="project.liveUrl" 
+              [href]="project.liveUrl" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="project-link btn-primary">
+              <i class="fas fa-external-link-alt"></i>
+              Live Demo
+            </a>
+            <a 
+              [href]="project.githubUrl" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="project-link btn-outline">
+              <i class="fab fa-github"></i>
+              Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- No Projects Message -->
+    <div *ngIf="filteredProjects.length === 0" class="no-projects">
+      <i class="fas fa-search"></i>
+      <h3>No projects found</h3>
+      <p>Try selecting a different category to see more projects.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact CTA -->
+<section class="contact-cta section-padding bg-light">
+  <div class="container">
+    <div class="cta-content text-center">
+      <h2>Have a Project in Mind?</h2>
+      <p>I'm always excited to work on new challenges and bring innovative ideas to life.</p>
+      <div class="cta-buttons">
+        <a href="mailto:your.email@example.com" class="btn btn-primary">
+          <i class="fas fa-envelope"></i>
+          Let's Collaborate
+        </a>
+        <a routerLink="/resume" class="btn btn-outline">
+          <i class="fas fa-file-alt"></i>
+          View Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
