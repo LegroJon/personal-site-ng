@@ -11,23 +11,18 @@ export class FooterComponent {
   socialLinks = [
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/yourprofile',
+      url: 'https://linkedin.com/in/jonathanlegro',
       icon: 'fab fa-linkedin-in'
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/yourusername',
+      url: 'https://github.com/jonathanlegro',
       icon: 'fab fa-github'
     },
     {
       name: 'Email',
-      url: 'mailto:your.email@example.com',
+      url: 'mailto:jonathan.legro@email.com',
       icon: 'fas fa-envelope'
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/yourusername',
-      icon: 'fab fa-twitter'
     }
   ];
 }

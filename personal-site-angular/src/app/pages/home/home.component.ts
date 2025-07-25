@@ -8,33 +8,33 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   
   skills = [
-    { name: 'Angular', level: 90, icon: 'fab fa-angular' },
-    { name: 'TypeScript', level: 85, icon: 'fab fa-js-square' },
-    { name: 'HTML/CSS', level: 95, icon: 'fab fa-html5' },
-    { name: 'Node.js', level: 80, icon: 'fab fa-node-js' },
-    { name: 'Python', level: 75, icon: 'fab fa-python' },
-    { name: 'Git', level: 85, icon: 'fab fa-git-alt' }
+    { name: 'Cybersecurity', level: 90, icon: 'fas fa-shield-alt' },
+    { name: 'C Programming', level: 85, icon: 'fas fa-code' },
+    { name: 'Java', level: 80, icon: 'fab fa-java' },
+    { name: 'Python', level: 85, icon: 'fab fa-python' },
+    { name: 'SQL', level: 80, icon: 'fas fa-database' },
+    { name: 'PowerShell', level: 75, icon: 'fas fa-terminal' }
   ];
 
   achievements = [
     {
-      number: '3+',
+      number: '2+',
       label: 'Years Experience',
       icon: 'fas fa-calendar-alt'
     },
     {
-      number: '15+',
+      number: '5+',
       label: 'Projects Completed',
       icon: 'fas fa-project-diagram'
     },
     {
-      number: '50+',
-      label: 'Happy Clients',
-      icon: 'fas fa-users'
+      number: 'Secret',
+      label: 'Security Clearance',
+      icon: 'fas fa-shield-alt'
     },
     {
       number: '100%',
-      label: 'Success Rate',
+      label: 'Mission Success',
       icon: 'fas fa-chart-line'
     }
   ];

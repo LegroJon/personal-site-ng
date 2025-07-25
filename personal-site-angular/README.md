@@ -1,6 +1,6 @@
-# Personal Portfolio Website - Angular ✨
+# Jonathan Legro - Personal Portfolio Website ✨
 
-A modern, responsive personal portfolio website built with Angular, showcasing professional experience, projects, and skills.
+A modern, responsive personal portfolio website built with Angular, showcasing my experience as a Software Design Engineer & Cybersecurity Specialist.
 
 ## 🎉 **PROJECT STATUS: FULLY FUNCTIONAL & READY TO USE**
 

@@ -9,92 +9,104 @@ export class ResumeComponent {
   
   experiences = [
     {
-      title: 'Senior Full Stack Developer',
-      company: 'Tech Solutions Inc.',
-      period: '2022 - Present',
-      description: 'Lead development of enterprise web applications using Angular, Node.js, and cloud technologies. Mentor junior developers and collaborate with cross-functional teams.',
+      title: 'Software Design Engineer I',
+      company: 'Cole Engineering Services, Inc.',
+      period: 'May 2025 - Present',
+      description: 'Perform vulnerability assessments and security compliance checks while managing enterprise software deployment and collaborating with cybersecurity teams.',
       achievements: [
-        'Increased application performance by 40% through optimization',
-        'Led team of 5 developers on major product redesign',
-        'Implemented CI/CD pipeline reducing deployment time by 60%'
+        'Conduct vulnerability assessments using Nessus and STIGViewer ensuring DoD cybersecurity standards',
+        'Deploy and manage software packages across enterprise using PDQ Deploy and PDQ Inventory',
+        'Collaborate with software and cybersecurity teams to integrate secure coding practices'
       ],
-      technologies: ['Angular', 'Node.js', 'AWS', 'Docker', 'MongoDB']
+      technologies: ['Nessus', 'STIGViewer', 'PDQ Deploy', 'PDQ Inventory', 'DoD Standards']
     },
     {
-      title: 'Frontend Developer',
-      company: 'Digital Agency Pro',
-      period: '2021 - 2022',
-      description: 'Developed responsive web applications and interactive user interfaces for various clients in different industries.',
+      title: 'Systems Engineer Intern',
+      company: 'Cole Engineering Services, Inc.',
+      period: 'May 2024 - May 2025',
+      description: 'Assisted in design, implementation, and testing of system architecture for Synthetic Training Environment (STE) Live Training Environment (LTE).',
       achievements: [
-        'Built 15+ responsive websites with 98% client satisfaction',
-        'Reduced page load times by 50% through optimization',
-        'Collaborated with design team to improve UX/UI standards'
+        'Designed and implemented system architecture for military training environments',
+        'Managed project tasks using Jira and maintained documentation in Confluence',
+        'Conducted system performance evaluations and generated reliability reports'
       ],
-      technologies: ['React', 'Vue.js', 'JavaScript', 'SASS', 'WordPress']
+      technologies: ['Jira', 'Confluence', 'System Architecture', 'STE/LTE', 'Performance Testing']
     },
     {
-      title: 'Junior Web Developer',
-      company: 'StartUp Ventures',
-      period: '2020 - 2021',
-      description: 'Assisted in developing web applications and learned modern development practices in an agile environment.',
+      title: 'Freelance Web and IT Specialist',
+      company: 'Christian Tutors of America',
+      period: 'Nov 2024 - Jan 2025',
+      description: 'Recovered website access and facilitated complete hosting migration while optimizing site functionality.',
       achievements: [
-        'Contributed to 3 major product releases',
-        'Implemented automated testing increasing code coverage by 30%',
-        'Participated in code reviews and team knowledge sharing'
+        'Successfully recovered administrative credentials and restored website functionality',
+        'Facilitated website migration to new hosting with full administrative control transfer',
+        'Optimized website content and improved user experience'
       ],
-      technologies: ['HTML/CSS', 'JavaScript', 'PHP', 'MySQL', 'Git']
+      technologies: ['cPanel', 'phpMyAdmin', 'Web Migration', 'Database Management', 'Content Optimization']
+    },
+    {
+      title: 'Medical Technician',
+      company: 'United States Air Force',
+      period: 'Nov 2009 - Aug 2015',
+      description: 'Provided critical care in Neuro ICU, supported surgical teams, and maintained mission-critical medical equipment during deployment.',
+      achievements: [
+        'Provided critical care in Neuro ICU and supported surgical teams as Wound & Ostomy Technician',
+        'Ensured HIPAA compliance across all clinical operations',
+        'Maintained mission-critical medical equipment during deployment to Afghanistan'
+      ],
+      technologies: ['Medical Equipment', 'HIPAA Compliance', 'Critical Care', 'Military Operations']
     }
   ];
 
   education = [
     {
-      degree: 'Master of Science in Computer Science',
-      school: 'University of Technology',
-      period: '2018 - 2020',
-      description: 'Specialized in software engineering and web technologies. Graduated with honors.',
+      degree: 'Bachelor of Science in Software Development',
+      school: 'Southern New Hampshire University',
+      period: '2020 - 2023',
+      description: 'Focused on software engineering principles, cybersecurity, and modern development practices.',
       achievements: [
-        'GPA: 3.8/4.0',
-        'Research in web performance optimization',
-        'Teaching assistant for web development courses'
+        'Graduated with expertise in multiple programming languages',
+        'Completed cybersecurity specialization coursework',
+        'Developed full-stack applications as capstone projects'
       ]
     },
     {
-      degree: 'Bachelor of Science in Information Technology',
-      school: 'State University',
-      period: '2014 - 2018',
-      description: 'Foundation in computer science, programming, and system design.',
+      degree: 'Cyber Security Certificate',
+      school: 'Professional Development',
+      period: '2023 - 2024',
+      description: 'Advanced cybersecurity training focused on vulnerability assessment and DoD compliance.',
       achievements: [
-        'Dean\'s List for 6 semesters',
-        'President of Computer Science Club',
-        'Organized tech workshops and coding competitions'
+        'Specialized in DoD cybersecurity standards and STIG implementation',
+        'Trained in advanced penetration testing methodologies',
+        'Obtained security clearance eligibility'
       ]
     }
   ];
 
   certifications = [
     {
-      name: 'AWS Certified Solutions Architect',
-      issuer: 'Amazon Web Services',
-      date: '2023',
-      icon: 'fab fa-aws'
+      name: 'Security Clearance (Secret)',
+      issuer: 'Department of Defense',
+      date: '2024',
+      icon: 'fas fa-shield-alt'
     },
     {
-      name: 'Google Cloud Professional Developer',
-      issuer: 'Google Cloud',
-      date: '2022',
-      icon: 'fab fa-google'
-    },
-    {
-      name: 'Certified Kubernetes Administrator',
-      issuer: 'CNCF',
-      date: '2022',
+      name: 'DoD 8570 IAT Level II Eligible',
+      issuer: 'Department of Defense',
+      date: '2024',
       icon: 'fas fa-certificate'
     },
     {
-      name: 'Angular Certified Developer',
-      issuer: 'Angular',
-      date: '2021',
-      icon: 'fab fa-angular'
+      name: 'Vulnerability Assessment Certified',
+      issuer: 'Professional Training',
+      date: '2024',
+      icon: 'fas fa-search'
+    },
+    {
+      name: 'STIG Implementation Specialist',
+      issuer: 'DoD Standards',
+      date: '2024',
+      icon: 'fas fa-cog'
     }
   ];
 
