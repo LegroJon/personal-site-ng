@@ -70,6 +70,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "personal-site-angular:build"
+          },
           "configurations": {
             "production": {
               "browserTarget": "personal-site-angular:build:production"

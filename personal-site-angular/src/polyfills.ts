@@ -3,4 +3,4 @@
  * You can add your own extra polyfills to this file.
  */
 
-import 'zone.js/dist/zone';  // Included with Angular CLI.
+import 'zone.js';  // Included with Angular CLI.

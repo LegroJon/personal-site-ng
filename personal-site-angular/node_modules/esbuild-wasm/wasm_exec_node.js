@@ -14,9 +14,19 @@ globalThis.fs = require("fs");
 globalThis.TextEncoder = require("util").TextEncoder;
 globalThis.TextDecoder = require("util").TextDecoder;
 
-globalThis.performance ??= require("performance");
+globalThis.performance = {
+	now() {
+		const [sec, nsec] = process.hrtime();
+		return sec * 1000 + nsec / 1000000;
+	},
+};
 
-globalThis.crypto ??= require("crypto");
+const crypto = require("crypto");
+globalThis.crypto = {
+	getRandomValues(b) {
+		crypto.randomFillSync(b);
+	},
+};
 
 require("./wasm_exec");
 
