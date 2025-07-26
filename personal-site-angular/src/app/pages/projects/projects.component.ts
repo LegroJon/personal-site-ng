@@ -10,115 +10,81 @@ export class ProjectsComponent {
   projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution built with Angular and Node.js, featuring user authentication, payment processing, and inventory management.',
+      title: 'Personal Portfolio Website',
+      description: 'A modern, responsive personal portfolio website built with Angular. Features professional resume display, project showcase, and cybersecurity-focused content with smooth animations and responsive design.',
       image: 'assets/images/project1.jpg',
-      technologies: ['Angular', 'Node.js', 'MongoDB', 'Stripe API', 'JWT'],
+      technologies: ['Angular', 'TypeScript', 'Bootstrap', 'Font Awesome', 'CSS3', 'HTML5'],
       features: [
-        'User authentication and authorization',
-        'Shopping cart and checkout process',
-        'Payment integration with Stripe',
-        'Admin dashboard for inventory management',
-        'Responsive design for all devices'
+        'Responsive design for all devices',
+        'Professional resume timeline display',
+        'Interactive project showcase with filtering',
+        'Smooth animations and transitions',
+        'Contact form integration and PDF resume download'
       ],
-      liveUrl: 'https://ecommerce-demo.example.com',
-      githubUrl: 'https://github.com/yourusername/ecommerce-platform',
+      liveUrl: 'https://legrojon.github.io/personal-site-ng',
+      githubUrl: 'https://github.com/LegroJon/personal-site-ng',
       status: 'Completed',
       category: 'Web Application'
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, team collaboration features, and advanced filtering options.',
+      title: 'Windows STIG Hardening Tool',
+      description: 'PowerShell automation script for applying DISA STIG (Security Technical Implementation Guide) configurations to Windows 10 systems using the PowerSTIG module for DoD compliance.',
       image: 'assets/images/project2.jpg',
-      technologies: ['React', 'Express.js', 'Socket.io', 'PostgreSQL', 'Redux'],
+      technologies: ['PowerShell', 'PowerSTIG', 'Windows 10', 'DISA STIG', 'DoD Standards'],
       features: [
-        'Real-time collaboration with Socket.io',
-        'Drag and drop task management',
-        'Team invitation and role management',
-        'Advanced filtering and search',
-        'File attachments and comments'
+        'Automated STIG configuration application',
+        'Windows 10 workstation compliance',
+        'PowerSTIG module integration',
+        'Security checklist generation',
+        'DoD cybersecurity standards enforcement'
       ],
-      liveUrl: 'https://taskmanager-demo.example.com',
-      githubUrl: 'https://github.com/yourusername/task-manager',
+      liveUrl: '',
+      githubUrl: 'https://github.com/LegroJon/windows-stig-hardening',
       status: 'Completed',
-      category: 'Web Application'
+      category: 'Security Tool'
     },
     {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'A responsive weather dashboard that displays current weather conditions, forecasts, and interactive maps using multiple weather APIs.',
+      title: 'Nessus Vulnerability Parser',
+      description: 'Professional Python tool for parsing Nessus XML vulnerability scan files and exporting data to multiple formats (JSON, CSV, Excel). Features filtering, host analysis, and comprehensive reporting capabilities.',
       image: 'assets/images/project3.jpg',
-      technologies: ['Vue.js', 'Chart.js', 'OpenWeather API', 'Mapbox', 'SCSS'],
+      technologies: ['Python', 'XML Parsing', 'Pandas', 'CSV', 'JSON', 'Excel Export'],
       features: [
-        'Current weather and 7-day forecast',
-        'Interactive weather maps',
-        'Location search and geolocation',
-        'Weather charts and visualizations',
-        'Dark/light theme toggle'
+        'Parse Nessus XML (.nessus) files',
+        'Export to JSON, CSV, and Excel formats',
+        'Filter by severity level and host',
+        'Generate host summary reports',
+        'Command-line interface for automation',
+        'Exclude informational findings option'
       ],
-      liveUrl: 'https://weather-dashboard.example.com',
-      githubUrl: 'https://github.com/yourusername/weather-dashboard',
+      liveUrl: '',
+      githubUrl: 'https://github.com/LegroJon/nessus-parser',
       status: 'Completed',
-      category: 'Web Application'
+      category: 'Security Tool'
     },
     {
       id: 4,
-      title: 'Portfolio Website',
-      description: 'This responsive portfolio website built with Angular, showcasing projects, skills, and professional experience.',
+      title: 'Data Analyzer & Text Parser',
+      description: 'Python-based data analysis tool for extracting, processing, and analyzing structured data from text files using regex patterns. Specializes in parsing tasks and generating CSV reports.',
       image: 'assets/images/project4.jpg',
-      technologies: ['Angular', 'TypeScript', 'SCSS', 'Bootstrap', 'GitHub Pages'],
+      technologies: ['Python', 'Regex', 'CSV Processing', 'Data Analysis', 'Text Parsing'],
       features: [
-        'Responsive design',
-        'Smooth animations and transitions',
-        'SEO optimized',
-        'Contact form integration',
-        'PDF resume download'
-      ],
-      liveUrl: 'https://yourname.github.io/portfolio',
-      githubUrl: 'https://github.com/yourusername/portfolio',
-      status: 'Completed',
-      category: 'Portfolio'
-    },
-    {
-      id: 5,
-      title: 'API Documentation Tool',
-      description: 'A tool for generating beautiful API documentation from OpenAPI specifications with interactive testing capabilities.',
-      image: 'assets/images/project5.jpg',
-      technologies: ['Angular', 'OpenAPI', 'Swagger', 'Material Design', 'Docker'],
-      features: [
-        'Auto-generated documentation from OpenAPI specs',
-        'Interactive API testing interface',
-        'Code examples in multiple languages',
-        'Authentication testing',
-        'Export to PDF and HTML'
-      ],
-      liveUrl: 'https://api-docs-tool.example.com',
-      githubUrl: 'https://github.com/yourusername/api-docs-tool',
-      status: 'In Progress',
-      category: 'Developer Tool'
-    },
-    {
-      id: 6,
-      title: 'Mobile Fitness App',
-      description: 'A cross-platform mobile application for fitness tracking, workout planning, and progress monitoring.',
-      image: 'assets/images/project6.jpg',
-      technologies: ['React Native', 'Firebase', 'Redux', 'Expo', 'Charts'],
-      features: [
-        'Workout tracking and planning',
-        'Progress charts and analytics',
-        'Social features and challenges',
-        'Nutrition tracking',
-        'Offline functionality'
+        'Custom regex pattern matching for data extraction',
+        'Text file parsing with multiple pattern types',
+        'Duplicate removal and data cleaning',
+        'CSV export functionality',
+        'Interactive command-line interface',
+        'Professional data handling and visualization'
       ],
       liveUrl: '',
-      githubUrl: 'https://github.com/yourusername/fitness-app',
-      status: 'In Progress',
-      category: 'Mobile App'
+      githubUrl: 'https://github.com/LegroJon/data_analyzer',
+      status: 'Completed',
+      category: 'Data Tool'
     }
   ];
 
-  categories = ['All', 'Web Application', 'Mobile App', 'Developer Tool', 'Portfolio'];
+  categories = ['All', 'Web Application', 'Security Tool', 'Data Tool'];
   selectedCategory = 'All';
   filteredProjects = this.projects;
 
