@@ -59,5 +59,4 @@ personal-site-angular/
 
 -   **Jonathan Legro**
 -   **Email**: j02885748l@gmail.com
--   **LinkedIn**: [linkedin.com/in/jonathanlegro](https://linkedin.com/in/jonathanlegro)
 -   **GitHub**: [@LegroJon](https://github.com/LegroJon)
