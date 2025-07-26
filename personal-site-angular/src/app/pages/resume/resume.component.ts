@@ -12,11 +12,11 @@ export class ResumeComponent {
       title: 'Software Design Engineer I',
       company: 'Cole Engineering Services, Inc.',
       period: 'May 2025 - Present',
-      description: 'Perform vulnerability assessments and security compliance checks while managing enterprise software deployment and collaborating with cybersecurity teams.',
+      description: 'Conducts vulnerability scans and compliance audits using Nessus and STIGViewer to ensure alignment with Department of Defense (DoD) cybersecurity standards.',
       achievements: [
-        'Conduct vulnerability assessments using Nessus and STIGViewer ensuring DoD cybersecurity standards',
-        'Deploy and manage software packages across enterprise using PDQ Deploy and PDQ Inventory',
-        'Collaborate with software and cybersecurity teams to integrate secure coding practices'
+        'Conducts vulnerability scans and compliance audits using Nessus and STIGViewer ensuring DoD cybersecurity standards',
+        'Manages enterprise-wide software updates using PDQ Deploy and monitors system configurations with PDQ Inventory',
+        'Collaborates with software and cybersecurity teams to implement secure development practices and validate software patches'
       ],
       technologies: ['Nessus', 'STIGViewer', 'PDQ Deploy', 'PDQ Inventory', 'DoD Standards']
     },
@@ -24,23 +24,25 @@ export class ResumeComponent {
       title: 'Systems Engineer Intern',
       company: 'Cole Engineering Services, Inc.',
       period: 'May 2024 - May 2025',
-      description: 'Assisted in design, implementation, and testing of system architecture for Synthetic Training Environment (STE) Live Training Environment (LTE).',
+      description: 'Supported the development and testing of the system architecture for the Synthetic Training Environment (STE) Live Training Environment (LTE).',
       achievements: [
-        'Designed and implemented system architecture for military training environments',
-        'Managed project tasks using Jira and maintained documentation in Confluence',
-        'Conducted system performance evaluations and generated reliability reports'
+        'Supported the development and testing of system architecture for STE Live Training Environment',
+        'Gathered and documented system requirements in coordination with stakeholders for mission-critical solutions',
+        'Used Jira for task management and Confluence for maintaining technical documentation',
+        'Conducted system performance evaluations and authored technical reports to drive reliability improvements'
       ],
       technologies: ['Jira', 'Confluence', 'System Architecture', 'STE/LTE', 'Performance Testing']
     },
     {
-      title: 'Freelance Web and IT Specialist',
+      title: 'Freelance Web & IT Specialist',
       company: 'Christian Tutors of America',
       period: 'Nov 2024 - Jan 2025',
-      description: 'Recovered website access and facilitated complete hosting migration while optimizing site functionality.',
+      description: 'Recovered full access to client\'s website by conducting targeted social engineering and restored website backend functionality.',
       achievements: [
-        'Successfully recovered administrative credentials and restored website functionality',
-        'Facilitated website migration to new hosting with full administrative control transfer',
-        'Optimized website content and improved user experience'
+        'Recovered full access to client\'s website by conducting targeted social engineering',
+        'Restored website backend functionality via cPanel, phpMyAdmin, and direct database recovery',
+        'Migrated the website to a new host, giving full administrative control to the client',
+        'Revised and optimized website content for improved performance and user experience'
       ],
       technologies: ['cPanel', 'phpMyAdmin', 'Web Migration', 'Database Management', 'Content Optimization']
     },
@@ -48,11 +50,12 @@ export class ResumeComponent {
       title: 'Medical Technician',
       company: 'United States Air Force',
       period: 'Nov 2009 - Aug 2015',
-      description: 'Provided critical care in Neuro ICU, supported surgical teams, and maintained mission-critical medical equipment during deployment.',
+      description: 'Delivered critical care in the Neuro ICU, supported surgical procedures as a Wound & Ostomy Technician, and maintained patient privacy in compliance with HIPAA.',
       achievements: [
-        'Provided critical care in Neuro ICU and supported surgical teams as Wound & Ostomy Technician',
-        'Ensured HIPAA compliance across all clinical operations',
-        'Maintained mission-critical medical equipment during deployment to Afghanistan'
+        'Delivered critical care in the Neuro ICU and supported surgical procedures as Wound & Ostomy Technician',
+        'Operated and maintained mission-critical medical systems during deployment',
+        'Coordinated patient transport and treatment logistics during deployment to Afghanistan',
+        'Maintained HIPAA compliance across all clinical operations and adapted rapidly to field conditions'
       ],
       technologies: ['Medical Equipment', 'HIPAA Compliance', 'Critical Care', 'Military Operations']
     }
@@ -60,25 +63,25 @@ export class ResumeComponent {
 
   education = [
     {
-      degree: 'Bachelor of Science in Software Development',
-      school: 'Southern New Hampshire University',
-      period: '2020 - 2023',
-      description: 'Focused on software engineering principles, cybersecurity, and modern development practices.',
+      degree: 'Bachelor of Science in Computer Science',
+      school: 'Embry-Riddle Aeronautical University',
+      period: 'Aug 2020 - May 2025',
+      description: 'Comprehensive computer science education focused on software development, systems programming, and cybersecurity.',
       achievements: [
-        'Graduated with expertise in multiple programming languages',
-        'Completed cybersecurity specialization coursework',
-        'Developed full-stack applications as capstone projects'
+        'Graduated with expertise in multiple programming languages including C, Java, and Python',
+        'Completed advanced coursework in cybersecurity and systems engineering',
+        'Developed full-stack applications and system-level programming projects'
       ]
     },
     {
-      degree: 'Cyber Security Certificate',
-      school: 'Professional Development',
-      period: '2023 - 2024',
-      description: 'Advanced cybersecurity training focused on vulnerability assessment and DoD compliance.',
+      degree: 'Bachelor of Arts in Russian, East European & Eurasian Studies',
+      school: 'University of Kansas',
+      period: 'Aug 2018 - May 2020',
+      description: 'Interdisciplinary studies focusing on Russian language, culture, and regional geopolitics.',
       achievements: [
-        'Specialized in DoD cybersecurity standards and STIG implementation',
-        'Trained in advanced penetration testing methodologies',
-        'Obtained security clearance eligibility'
+        'Developed advanced language skills and cultural understanding',
+        'Studied regional politics and international relations',
+        'Enhanced analytical and research capabilities'
       ]
     }
   ];
@@ -87,52 +90,40 @@ export class ResumeComponent {
     {
       name: 'Security Clearance (Secret)',
       issuer: 'Department of Defense',
-      date: '2024',
+      date: 'Active',
       icon: 'fas fa-shield-alt'
     },
     {
-      name: 'DoD 8570 IAT Level II Eligible',
-      issuer: 'Department of Defense',
-      date: '2024',
+      name: 'CompTIA Security+',
+      issuer: 'CompTIA',
+      date: 'May 2025',
       icon: 'fas fa-certificate'
-    },
-    {
-      name: 'Vulnerability Assessment Certified',
-      issuer: 'Professional Training',
-      date: '2024',
-      icon: 'fas fa-search'
-    },
-    {
-      name: 'STIG Implementation Specialist',
-      issuer: 'DoD Standards',
-      date: '2024',
-      icon: 'fas fa-cog'
     }
   ];
 
   skills = [
     {
-      category: 'Frontend',
-      items: ['Angular', 'React', 'Vue.js', 'TypeScript', 'JavaScript', 'HTML5/CSS3', 'SASS/SCSS', 'Bootstrap']
+      category: 'Security & Compliance',
+      items: ['Nessus', 'STIGViewer', 'PDQ Deploy', 'PDQ Inventory', 'DoD Standards', 'HIPAA Compliance']
     },
     {
-      category: 'Backend',
-      items: ['Node.js', 'Express.js', 'Python', 'Django', 'PHP', 'Laravel', 'RESTful APIs', 'GraphQL']
+      category: 'Programming Languages',
+      items: ['C', 'Java', 'SQL', 'PHP', 'Python', 'PowerShell', 'Bash']
     },
     {
-      category: 'Database',
-      items: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'Firebase', 'DynamoDB']
+      category: 'Web & Admin Tools',
+      items: ['cPanel', 'phpMyAdmin', 'GitHub', 'VS Code', 'VirtualBox', 'VMware']
     },
     {
-      category: 'DevOps & Tools',
-      items: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Git', 'Jenkins', 'Nginx', 'Linux']
+      category: 'Collaboration & Documentation',
+      items: ['Jira', 'Confluence', 'Microsoft Office', 'Technical Writing', 'Project Management']
     }
   ];
 
   downloadResume(): void {
     const link = document.createElement('a');
     link.href = 'assets/docs/resume.pdf';
-    link.download = 'John_Doe_Resume.pdf';
+    link.download = 'Jonathan_Legro_Resume.pdf';
     link.click();
   }
 }

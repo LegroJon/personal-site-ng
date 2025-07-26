@@ -21,7 +21,7 @@ export class FooterComponent {
     },
     {
       name: 'Email',
-      url: 'mailto:jonathan.legro@email.com',
+      url: 'mailto:j02885748l@gmail.com',
       icon: 'fas fa-envelope'
     }
   ];

@@ -10,10 +10,12 @@ export class HomeComponent implements OnInit {
   skills = [
     { name: 'Cybersecurity', level: 90, icon: 'fas fa-shield-alt' },
     { name: 'C Programming', level: 85, icon: 'fas fa-code' },
-    { name: 'Java', level: 80, icon: 'fab fa-java' },
-    { name: 'Python', level: 85, icon: 'fab fa-python' },
+    { name: 'Java', level: 85, icon: 'fab fa-java' },
+    { name: 'Python', level: 80, icon: 'fab fa-python' },
     { name: 'SQL', level: 80, icon: 'fas fa-database' },
-    { name: 'PowerShell', level: 75, icon: 'fas fa-terminal' }
+    { name: 'PowerShell', level: 75, icon: 'fas fa-terminal' },
+    { name: 'System Administration', level: 85, icon: 'fas fa-server' },
+    { name: 'Spanish', level: 95, icon: 'fas fa-language' }
   ];
 
   achievements = [
